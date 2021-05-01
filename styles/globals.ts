@@ -1,8 +1,18 @@
 import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body {
     font-family: Gilroy, Sans-Serif
   }
 `
-export default GlobalStyle
+
+export const GlobalTheme = {
+  colors: {},
+  fonts: ['Gilroy', 'sans-serif', 'Roboto'],
+  fontSizes: {},
+}

@@ -1,10 +1,12 @@
 import type { AppProps } from 'next/app'
-import GlobalStyle from '@/styles/globals'
+import { GlobalTheme, GlobalStyle } from '@/styles/globals'
+import { ThemeProvider } from 'styled-components'
+
 import Head from 'next/Head'
 
 function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <>
+    <ThemeProvider theme={GlobalTheme}>
       <Head>
         <title>Heril Saha's Portfolio</title>
         <link
@@ -14,7 +16,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 
