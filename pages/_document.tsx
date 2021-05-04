@@ -1,8 +1,9 @@
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import { DocumentContext } from 'next/document'
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx): Promise<any> {
+  static async getInitialProps(ctx: DocumentContext): Promise<any> {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
