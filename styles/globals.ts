@@ -19,7 +19,7 @@ export const GlobalTheme = {
     greyBackground: '#F9F9F9',
     white: '#FFFFFF',
   },
-  fonts: ['Gilroy', 'sans-serif', 'Roboto'],
+  fonts: 'Gilroy, Sans-Serif, Roboto',
   breakpoints: {
     xl: '1024px', //min-width
     lg: '768px', //min-width
